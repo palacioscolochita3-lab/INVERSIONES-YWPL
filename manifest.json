@@ -1,0 +1,9 @@
+{
+"name":"Catalogo Waleska",
+"short_name":"Waleska",
+"start_url":"./index.html",
+"display":"standalone",
+"background_color":"#ffffff",
+"theme_color":"#9d4edd",
+"orientation":"portrait"
+}

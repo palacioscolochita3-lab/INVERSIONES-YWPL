@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo Waleska</title>
+
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+
+<meta name="theme-color" content="#9d4edd">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🛍️ Catálogo Waleska</h1>
+
+<div class="card">
+
+<input type="text" id="cliente" placeholder="Nombre del cliente">
+
+<input type="text" id="producto" placeholder="Nombre del producto">
+
+<input type="number" id="costo" placeholder="Costo del producto">
+
+<input type="number" id="envioTotal" placeholder="Envío total del pedido">
+
+<input type="number" id="productosPedido" placeholder="Cantidad total de productos del pedido">
+
+<input type="number" id="cantidad" placeholder="Cantidad de este producto">
+<button onclick="calcular()">
+Calcular Precio
+</button>
+
+<div id="precios"></div>
+
+<button onclick="guardarProducto()">
+Guardar Producto
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>📊 Resumen</h2>
+
+<p>💵 Inversión: <span id="inversion">L 0</span></p>
+
+<p>🛒 Ventas: <span id="ventas">L 0</span></p>
+
+<p>📈 Ganancia: <span id="ganancias">L 0</span></p>
+
+</div>
+
+<div class="card">
+
+<h2>📦 Productos</h2>
+<input
+type="text"
+id="buscarCliente"
+placeholder="🔍 Buscar por cliente..."
+onkeyup="buscarCliente()">
+
+<table>
+
+<thead>
+
+<tr>
+<th>cliente</th>
+<th>Producto</th>
+<th>Cant.</th>
+<th>Precio</th>
+<th>Ganancia</th>
+<th>Acción</th>
+</tr>
+
+</thead>
+
+<tbody id="tabla"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
